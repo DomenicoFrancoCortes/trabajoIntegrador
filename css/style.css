@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap');
+/*aca con esta url estoy importando la letra Monserrat para poder darle ese estilo a mi pagina web*/
+* {/* con esto estoy dandole forma a todo mi html, donde le digo que no tenga ni margen ni padding y que no tenga ninun estilo la letra*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+}
+
+li,a,b, c {/* aca estoy dandole dimencion y color a las letras de mi menu*/
+
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(234, 237, 240, 0.635);
+
+
+}
+
+.logo { /* aca estoy dandole dimenciones a el logo de mi menu*/
+    height: 60px;
+    margin: 0px 0px 0px 90px;
+    
+}
+
+header { /* este contenedor lo que hace es alinear de forma horizontal todos los elementos de mi menu*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1262px;
+    padding: 10px ;
+    background-color: rgb(54, 53, 53);
+    
+}
+
+
+.menu {/* este contenedor esta haciendo que no tenga ningun estilo mis letras y que con el pointer cuando se pase 
+          el cursor se vea la manito*/
+    list-style: none;
+    cursor: pointer;
+}
+
+.logo { /* este contenedor es igual al .menu*/
+    cursor: pointer;
+
+}
+
+.menu li {/* aca le estoy dando dimencinones a mi menu*/
+    display: inline-block;
+    padding: 0px 10px;
+    font-weight: bold;
+    
+}
+
+.menu li a {/* aca por medio de transition lo que estoy haciendo es que cuando se pase el cursor por los elementos de
+               mi menu se va a ver como una especie de transicion donde cada elemento va a tomar el color blanco*/
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+    
+}
+
+.menu li a:hover {/* por medio de esto es que se va a cambiar el color de cada elemento de mi menu cuando se pase el cursor*/
+    color: white;
+}
+
+.menu li b {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    align-items: stretch;
+    padding: 0px 100px 0px 0px;
+    color: rgba(234, 237, 240, 0.635)
+   
+    
+    
+}
+
+.menu li b  {
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+
+}
+
+.menu li b:hover {
+    color: white;
+}
+
+.menu li c {
+    color: rgb(61, 140, 54);
+    font-weight: bold;
+}
+
+.menu li c {
+    transition: all 0.3s ease 0s;
+}
+
+.menu li c:hover {
+    color: white;
+}
+
+#content {
+    background-image: url('../image/ba1.jpg');
+   
+    background-color: rgb(54, 53, 53);
+    height: 710px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    
+
+
+
+
+}
+
+.contenido {
+
+    font-family: "Montserrat", sans-serif;
+    align-self: flex-start;
+    align-items: stretch;
+    color: white;
+    text-align: right;
+    padding: 400px 100px 400px 400px;
+    position: absolute;
+    
+
+
+
+
+
+
+}
+
+.boton1 {
+    background-color: rgba(234, 237, 240, 0.2);
+    height: 12px 20px;
+    padding: 12px;
+    margin: 10px;
+    font-family: "Montserrat", sans-serif;
+    align-self: flex-start;
+    align-items: stretch;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton2 {
+    background-color: rgb(61, 140, 54);
+    height: 12px 20px;
+    padding: 12px;
+    margin: 10px;
+    font-family: "Montserrat", sans-serif;
+    align-self: flex-start;
+    align-items: stretch;
+    color: white;
+    border-width: none;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.oradores {
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    width: 1262px;
+    text-align: center;
+}
+
+h1 {
+
+    padding: 15px;
+}
+h2{
+    font-weight:100; 
+}
+
+
+
+.card1 {/*esta es el contenedor de la card1 aca estoy usando la 
+        propiedad float para poder alinear todas las card en un mismo renglon*/
+    width: 250px;
+    height: 490px;
+    margin: 0px 15px 0px 50px;
+    text-align:left ;
+   
+    border: 1px rgb(45, 43, 43) solid;
+    float: left;
+
+}
+
+.card2 {/*esta es el contenedor de la card2 aca estoy usando la 
+    propiedad float para poder alinear todas las card en un mismo renglon*/
+    width: 250px;
+    height: 490px;
+    margin: 0px 15px 0px 16px;
+    text-align:left ;
+    border: 1px rgb(45, 43, 43) solid;
+    float: left;
+
+}
+
+.card3 {/*esta es el contenedor de la card3 aca estoy usando la 
+    propiedad float para poder alinear todas las card en un mismo renglon*/
+    width: 250px;
+    height: 490px;
+    margin: 0px 15px 0px 15px;
+    text-align:left ;
+    border: 1px rgb(45, 43, 43) solid;
+    float: left;
+
+
+}
+  
+
+.contenedor {
+    width: 900px;
+    height: 600px;
+    align-items: center;
+    text-align: center;
+}
+.contenedor h3, p{
+    padding-top: 12px;
+    
+    text-size-adjust: 15px ;
+   
+}
+.bloque{/* este bloque esta centrando las card1, card2, card3*/
+    width: 900px;
+    align-items: center;
+    text-align: center;
+    margin:  0 auto;
+}
+
+
+
+.botontarj1 {/* este boton es el que esta en la card1 y card 2*/
+    color: black;
+    font-weight: bold; 
+    background-color: rgba(255, 225, 0, 0.769);
+   margin-top: 10px;
+    padding: 0.3rem;
+    border-radius: 0.8rem;
+    border-width: 0;
+}
+
+.botontarj2 {/* este boton es el que esta en la card1 y card 2*/
+    color: white;
+    font-weight: bold; 
+    background-color: rgba(30, 83, 143, 0.541);
+    padding: 0.3rem;
+    margin-top: 10px;
+    border-radius: 0.8rem;
+    border-width: 0;
+}
+.botontarj3{/* este boton es el que esta en la card3*/
+    color: white;
+    font-weight: bold; 
+    background-color: rgb(84, 88, 92);
+    padding: 0.3rem;
+    margin-top: 10px;
+    border-radius: 0.8rem;
+    border-width: 0;
+}
+.botontarj4{/* este boton es el que esta en la card3*/
+    color: white;
+    font-weight: bold; 
+    background-color: rgb(164, 41, 41);
+    padding: 0.3rem;
+    margin-top: 10px;
+    border-radius: 0.8rem;
+    border-width: 0;
+}
+
+.imhono {/*este es el borde de la imagen de honolulu*/
+    float: left;
+    height: 400px;
+    align-items: flex-start;
+    border: 0.1px white solid;
+}
+
+.honolulu {/*este es el contenedor de todo el bloque de la imagen y el texto de honolulu*/
+    width: 1262px;
+    border: 20px;
+    border: 15rem;
+    background-color: rgb(39, 48, 58);
+    text-align: justify;
+    height: 400px;
+    color: white;
+
+
+}
+
+
+#negrita{/* en este id estoy dandole la propiedad de negrita a todos los elementos del html que tienes este id*/
+    font-weight: bold;
+}
+.cont{ /* este contenedor contiene el texto al lado de la imagen de honolulu*/
+    float: right;
+ width: 500px;
+ height: 300px;
+ padding-top: 15px;
+ padding-left: 30px;
+ margin-right: 40px;
+ border: 30px;
+ text-align: left;
+ font-size: 15px;
+ 
+ 
+
+ 
+}
+
+.boton3 {
+    background-color: rgb(39, 48, 58);
+    height: 12px 20px;
+    padding: 12px;
+    margin: 10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 0.5rem;
+    border: white 0.1px solid;
+    cursor: pointer;
+}
+
+.oradores {
+    width: 900px;
+
+}
+.bloque2{
+    width: 900px;
+    align-items: center;
+    text-align: center;
+    margin:  0 auto;  
+}
+
+.formulario {
+
+    text-align: center;
+    color: rgb(93, 95, 97);
+    
+}
+#nombre, #apellido{
+    padding-right: 66px ;
+    margin: 15px;
+}
+
+.enviar {
+    height: 12px 20px;
+    padding: 10px 250px 10px 250px;
+    margin: 10px;
+    color: white;
+    background-color: rgb(113, 163, 64);
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(58, 78, 99);
+    color: white;
+    padding: 10px;
+    margin: 15px 0 rgb(58, 78, 99);
+    text-indent: 15px;
+    
+}
+
+footer a {
+    padding: 0px 40px 0px 5px;
+    font-weight: bold;
+
+}
+
+footer a:hover {
+
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
